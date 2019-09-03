@@ -72,3 +72,25 @@ noRight.addEventListener('contextmenu',
 function(e){
     e.preventDefault();
 });
+
+//Stop nav from refresh
+const navAll = document.querySelector('.nav-link')
+navAll.addEventListener('click',
+function(e){
+    e.preventDefault();
+});
+
+//Stop event propagation 
+const destiny = document.querySelector('.destination');
+destiny.addEventListener('click',
+function(e){
+    console.log("the prime destination");
+});
+
+const moreDestiny = document.querySelector('.destination p');
+moreDestiny.addEventListener('click',
+function(e){
+    console.log("the other prime destination");
+    e.stopPropagation();
+});
+
