@@ -74,10 +74,11 @@ function(e){
 });
 
 //Stop nav from refresh
-const navAll = document.querySelector('.nav-link')
+const navAll = document.querySelector('.nav')
 navAll.addEventListener('click',
 function(e){
     e.preventDefault();
+    console.log("NO REFRESH!")
 });
 
 //Stop event propagation 
