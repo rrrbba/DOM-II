@@ -57,14 +57,14 @@ window.addEventListener('afterprint',
 function(e){
     down.style.backgroundColor = 'lightpink'
 });
-//comment out Event 1 & 9 before attempting this
+//comment out Event 9 before attempting this
 
 //Event 9
-const up = document.querySelector('body')
-up.addEventListener('keyup', 
+const copying = document.querySelector('footer p')
+copying.addEventListener('copy',
 function(e){
-    click.textContent += `${e.code}`;
-});
+    window.alert("THAT'S MY COMPANY")
+})
 
 //Event 10
 const noRight = document.querySelector('p')
